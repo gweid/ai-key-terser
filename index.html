@@ -1856,6 +1856,19 @@
           <small class="form-help" data-lang-key="proxy-help">留空使用默认代理，建议使用自己的反向代理以提高成功率</small>
         </div>
 
+        <div class="input-group">
+          <div class="label-with-import">
+            <label for="apiKeys" data-lang-key="api-keys">API 密钥列表 (每行一个)</label>
+            <button class="import-btn" id="importBtn" title="导入文件">📁</button>
+          </div>
+          <div class="textarea-wrapper">
+            <textarea id="apiKeys" class="form-control textarea" data-lang-key="api-keys-placeholder"
+              placeholder="请输入API密钥，每行一个：&#10;sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#10;sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#10;..."></textarea>
+            <button class="paste-btn" id="pasteBtn" title="粘贴">📋</button>
+          </div>
+          <input type="file" id="fileInput" accept=".txt" style="display: none;">
+        </div>
+
         <!-- 并发控制 -->
         <div class="input-group">
           <label data-lang-key="concurrency-control">并发控制</label>
@@ -1900,19 +1913,6 @@
             </div>
           </div>
           <small class="form-help" data-lang-key="retry-help">遇到临时错误(如403)时重试次数，有助于提高检测准确性</small>
-        </div>
-
-        <div class="input-group">
-          <div class="label-with-import">
-            <label for="apiKeys" data-lang-key="api-keys">API 密钥列表 (每行一个)</label>
-            <button class="import-btn" id="importBtn" title="导入文件">📁</button>
-          </div>
-          <div class="textarea-wrapper">
-            <textarea id="apiKeys" class="form-control textarea" data-lang-key="api-keys-placeholder"
-              placeholder="请输入API密钥，每行一个：&#10;sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#10;sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#10;..."></textarea>
-            <button class="paste-btn" id="pasteBtn" title="粘贴">📋</button>
-          </div>
-          <input type="file" id="fileInput" accept=".txt" style="display: none;">
         </div>
 
         <div class="alert">
