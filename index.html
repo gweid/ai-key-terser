@@ -1821,9 +1821,9 @@
         <div class="input-group">
           <label for="apiType" data-lang-key="select-api">选择 API 类型</label>
           <select id="apiType" class="form-control">
-            <option value="openai">OpenAI GPT</option>
             <option value="claude">Claude</option>
             <option value="gemini">Google Gemini</option>
+            <option value="openai">OpenAI GPT</option>
           </select>
         </div>
 
@@ -2018,12 +2018,6 @@
 
     // 模型配置 - 使用官方名称
     const modelOptions = {
-      openai: [
-        'gpt-4o-mini',
-        'gpt-4-turbo',
-        'gpt-4o',
-        'gpt-4',
-      ],
       claude: [
         'claude-sonnet-4-20250514',
         'claude-opus-4-20250514',
@@ -2032,6 +2026,12 @@
       gemini: [
         'gemini-2.5-flash',
         'gemini-2.5-pro'
+      ],
+      openai: [
+        'gpt-4o-mini',
+        'gpt-4-turbo',
+        'gpt-4o',
+        'gpt-4',
       ]
     };
 
