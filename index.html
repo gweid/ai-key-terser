@@ -1853,7 +1853,16 @@
         <div class="input-group">
           <label for="proxyUrl" data-lang-key="proxy-url">代理服务器 URL (可选)</label>
           <input type="text" id="proxyUrl" class="form-control" placeholder="https://your-proxy.com">
-          <small class="form-help" data-lang-key="proxy-help">留空使用默认代理，建议使用自己的反向代理以提高成功率</small>
+          <small class="form-help">
+            &nbsp;&nbsp;1. 留空使用默认代理，建议使用自己的反向代理以提高成功率<br>
+            &nbsp;&nbsp;2. 常用的中转站URL：<br>&nbsp;&nbsp;&nbsp;&nbsp;
+              2.1.<span style="color: orange">instcopilot:</span> https://instcopilot-api.com/v1<br>&nbsp;&nbsp;&nbsp;&nbsp;
+              2.2.<span style="color: orange">wenwencode: </span>https://code.wenwen-ai.com/v1<br>&nbsp;&nbsp;&nbsp;&nbsp;
+              2.3.<span style="color: orange">aicodeditor: </span>https://api.aicodeditor.com/v1<br>&nbsp;&nbsp;&nbsp;&nbsp;
+              2.4.<span style="color: orange">catsapi: </span>https://catsapi.com/v1<br>&nbsp;&nbsp;&nbsp;&nbsp;
+              2.5.<span style="color: orange">anyrouter: </span>https://anyrouter.top/v1<br>&nbsp;&nbsp;&nbsp;&nbsp;
+              2.6.<span style="color: orange">zone: </span>https://zone.veloera.org/v1
+          </small>
         </div>
 
         <div class="input-group">
@@ -2047,7 +2056,6 @@
         'model-input-placeholder': '输入自定义模型名',
         'detected-models-title': '检测到的可用模型',
         'proxy-url': '代理服务器 URL (可选)',
-        'proxy-help': '留空使用默认代理，建议使用自己的反向代理以提高成功率',
         'concurrency-control': '并发控制',
         'retry-control': '重试控制',
         'retry-help': '遇到临时错误(如403)时重试次数，有助于提高检测准确性',
@@ -2108,7 +2116,6 @@
         'model-input-placeholder': 'Enter custom model name',
         'detected-models-title': 'Detected Available Models',
         'proxy-url': 'Proxy Server URL (Optional)',
-        'proxy-help': 'Leave empty to use default proxy, recommend using your own reverse proxy for better success rate',
         'concurrency-control': 'Concurrency Control',
         'retry-control': 'Retry Control',
         'retry-help': 'Number of retries when encountering temporary errors (like 403), helps improve detection accuracy',
