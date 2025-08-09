@@ -2288,6 +2288,21 @@
         alert(message);
       }
 
+
+      let scrollCount = 0;
+      const scrollId = setInterval(function () {
+        if (scrollCount > 20) {
+          clearInterval(scrollId);
+          return;
+        }
+        // 平滑滚动到页面底部
+        window.scrollTo({
+          top: document.body.scrollHeight,
+          behavior: 'smooth'
+        });
+        scrollCount++;
+      }, 100);
+
       // 设置测试状态
       isTestingInProgress = true;
       shouldCancelTesting = false;
